@@ -46,9 +46,9 @@ while True:
 
         # Find upgrades that we can currently afford
         affordable_upgrades = {}
-        for cost, id in cookie_upgrades.items():
+        for cost, the_id in cookie_upgrades.items():
             if cookie_count > cost:
-                affordable_upgrades[cost] = id
+                affordable_upgrades[cost] = the_id
 
         # Purchase the most expensive affordable upgrade
         highest_price_affordable_upgrade = max(affordable_upgrades)
