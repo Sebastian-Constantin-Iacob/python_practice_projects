@@ -16,7 +16,7 @@
             {%  for d in posts: %}
             <h2>{{ d['title'] }}</h2>
             <p class="text">{{ d['subtitle'] }} </p>
-            <a href="#">Read</a>
+            <a href="{{  url_for('get_post', index=d['id']) }}">Read</a>
             {% endfor %}
         </div>
     </div>
